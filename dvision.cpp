@@ -3,8 +3,8 @@ using namespace std;
 int main()
 {
     int pr;
-    //hello
     
+
     cout << "Enter your Percentage:- ";
     cin >> pr;
     if (pr <33){

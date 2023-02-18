@@ -2,19 +2,33 @@
 using namespace std;
 int main()
 {
-    int pr;
-    cout << "Enter your Percentage:- ";
-    cin >> pr;
-    if (pr <33){
-        cout<< "Sorry fail " << pr << "%";
-    }else if(pr >=33 && pr < 60){
-        cout<< "Good Pass 2nd Division " << pr << "%"; 
+    int s1,s2,s3,s4,s5;
+
+    cout <<"Enter your subject 1 :- ";
+    cin >> s1;
+    cout <<"Enter your subject 2 :- ";
+    cin >> s2;
+    cout <<"Enter your subject 3 :- ";
+    cin >> s3;
+    cout <<"Enter your subject 4 :- ";
+    cin >> s4;
+    cout <<"Enter your subject 5 :- ";
+    cin >> s5;
+    int subTotal = s1+s2+s3+s4+s5;
+    int pr = 100*subTotal/500;
+    
+    // cout <<pr<<"%";
+
+    if(pr>=60){
+       cout <<"Grade A "<<pr<<"%"; 
+    }else if(pr >= 50){
+         cout <<"Grade B "<<pr<<"%"; 
+    }else if(pr >= 40){
+         cout <<"Grade C "<<pr<<"%";
     }else{
-        cout<< "Very Good Pass 1st Division " << pr << "%\n";  
-        if (pr>=75)
-        {
-            cout<< "Distinction " << pr << "%"; 
-        }  
+         cout <<"Grade D "<<pr<<"%";
     }
+    
+
     
 }
